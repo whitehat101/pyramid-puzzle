@@ -1,4 +1,3 @@
-//var assert = require('assert')
 import Vector from "../lib/Vector"
 
 /* Vector
@@ -30,10 +29,6 @@ describe('Vector', () => {
      LEFT: new Vector(  1, 0, 0 ),
     RIGHT: new Vector( -1, 0, 0 ),
   }
-
-  beforeEach(() => {
-    klass = new Vector()
-  })
 
   describe('dot products', () => {
     it('works with a trivial 2d example', () => {
@@ -76,14 +71,14 @@ describe('Vector', () => {
 
     it('works with a 2d example', () => {
       expect(
-        (new Vector(36, 49)).norm()
-      ).toBe(1)
+        (new Vector(3, 4)).norm()
+      ).toBe(5)
     })
 
     it('works with a 3d example', () => {
       expect(
         (new Vector(1, 2, 3)).norm()
-      ).toBe(1)
+      ).toBe(3.7416573867739413)
     })
   })
 
