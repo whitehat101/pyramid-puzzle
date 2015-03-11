@@ -1,6 +1,6 @@
-var assert = require('assert')
+// import {VectorToPosition, Vector} from "../lib/VectorToPosition"
 import VectorToPosition from "../lib/VectorToPosition"
-// import Vector from "../lib/Vector"
+import Vector from "../Lib/Vector"
 
 /* VectorToPosition
  *
@@ -8,7 +8,7 @@ import VectorToPosition from "../lib/VectorToPosition"
  * map a new VECTOR into a LABEL
  */
 
-xdescribe('VectorToPosition', () => {
+describe('VectorToPosition', () => {
   var v2p, map, threshold
 
   map = {
