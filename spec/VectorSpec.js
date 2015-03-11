@@ -102,6 +102,12 @@ describe('Vector', () => {
       ).toBe(0)
     })
 
+    it('works with two opposite vectors', () => {
+      expect(
+        (new Vector(1, 2, 3)).angleBetween(new Vector(-1, -2, -3))
+      ).toBe(Math.PI)
+    })
+
     it('works with itself', () => {
       let v = new Vector(1, 2, 3)
       expect(
