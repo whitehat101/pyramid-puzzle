@@ -96,13 +96,13 @@ describe('Vector', () => {
       ).toBe(Math.PI)
     })
 
-    it('works with a two of the same vectors', () => {
+    it('works with two of the same vectors', () => {
       expect(
         (new Vector(1, 2, 3)).angleBetween(new Vector(1, 2, 3))
       ).toBe(0)
     })
 
-    it('works with a itself', () => {
+    it('works with itself', () => {
       let v = new Vector(1, 2, 3)
       expect(
         v.angleBetween(v)
