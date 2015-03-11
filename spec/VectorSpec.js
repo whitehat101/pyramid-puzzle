@@ -59,25 +59,25 @@ describe('Vector', () => {
   describe('normalization', () => {
     it('works with a trivial 2d example', () => {
       expect(
-        v2d.UP.norm()
+        v2d.UP.magnitude()
       ).toBe(1)
     })
 
     it('works with a trivial 3d example', () => {
       expect(
-        v3d.UP.norm()
+        v3d.UP.magnitude()
       ).toBe(1)
     })
 
     it('works with a 2d example', () => {
       expect(
-        (new Vector(3, 4)).norm()
+        (new Vector(3, 4)).magnitude()
       ).toBe(5)
     })
 
     it('works with a 3d example', () => {
       expect(
-        (new Vector(1, 2, 3)).norm()
+        (new Vector(1, 2, 3)).magnitude()
       ).toBe(3.7416573867739413)
     })
   })
